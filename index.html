@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shortcuts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+
+html body {
+  padding-top: 70px;
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0),rgb(221, 221, 221));
+  background-attachment: fixed;
+}
+
+.red_gradient{
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0),#BF1125);
+}
+.white{
+ background-color:#FFF;
+}
+
+.main_slider_text,
+.h1, 
+.h2,
+.h3, 
+.h4,
+.p{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.text{
+  font-family: "Courier New", Courier, monospace;
+}
+
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color:#CC1228;
+    color: #C9C0BB;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
+  }
+  .navbar-brand{
+    float:left;
+    min-height: 55px;
+    padding: 0 15px 15px;
+  }
+
+  .navbar-inverse .navbar-nav a,
+  .navbar-inverse .navbar-nav a:hover{
+    color:#F1E6E0;
+    background-color: #CC1228;
+  }
+  .navbar-inverse .navbar-nav a:hover{
+    color:#FFFF;
+    background-color: #BE1125
+  }
+
+  .navbar-toggle{
+    color:#F1E6E0;
+    background-color: #CC1228;
+  }
+  .navbar-toggle:hover{
+    color:#F1E6E0;
+    background-color: #BE1125;
+  }
+
+  .navbar-inverse .navbar-nav li a:hover {
+    color: #F1E6E0;
+    background-color: #BE1125;
+  }
+  .navbar-inverse .navbar-nav li a{
+    color: #FFFF;
+    background-color: #CC1228;
+  }
+  .carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    color: #F1E6E0;
+  }
+  .btn, 
+  .btn:focus,
+  .btn:active:focus{
+    background-color:#CC1228;
+    font-size: 18px;
+    opacity: 0.85;
+    color: #F1E6E0;
+    padding: 12px 22px;
+  }
+  .btn:hover{
+    opacity: 1;
+    background-color:#BF1125;
+    font-size: 18px;
+    color: #F1E6E0;
+    padding: 12px 22px;
+  }
+  .container{
+    margin: 4% auto;
+  }
+  #icon {
+    max-width: 200px;
+    margin: 1% auto;
+  }
+  .logo_image{
+    height:75px;
+    padding: 0px 0px 20px ;
+    width: 20px;
+  }
+  .slogan_image{
+    height:px;
+    padding: 0px 0px 20px;
+    width: 200px;
+
+  }
+
+  .map_layout_image{
+    height: 400px;
+    width: 600px;
+  }
+
+  .theme_carousel{
+    margin:0%;
+  }
+  .theme_btn{
+    width: 175px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+  }
+
+  .theme_div{
+    margin-top:100px;
+  }
+
+.distance_demo_btn,
+.distance_demo_btn:active,
+.distance_demo_btn:active:focus{
+  width: 30px;
+  height: 30px;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+
+  background-color:#CC1228;
+    opacity: 0.85;
+    color: #F1E6E0;
+}
+
+.distance_demo_btn:hover{
+  width: 30px;
+  height: 30px;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+
+  opacity: 1;
+  background-color:#BF1125;
+  color: #F1E6E0;
+
+}
+  a{text-decoration: none}
+#gif{
+  width: 600px;
+  height: 400px;
+}
+
+#theme_display{
+  width:600px;
+  height:400px;
+
+}
+  @media (max-width: 600px){
+    .carousel-caption{
+      display:none;
+    }
+    #icon{
+      max-width: 50px;
+    }
+    h2{
+      font-size: 1.7em;
+    }
+  }
+  </style>
+</head>
+<body>
+
+    <nav class = "navbar navbar-inverse navbar-fixed-top">
+      <div class = "container-fluid">
+        <div class = "navbar-header">
+          <button type = "button" class = "navbar-toggle" data-toggle = "collapse"
+          data-target = "#myNavbar">
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+          </button>
+          <div class = "row">
+              <div class="col-sm-2">
+                  <a class = "navbar-brand" href = "#"><img src = "img/shortcuts_logo 2.png" class = "logo_image"></a>
+              </div>
+
+              <div class="col-sm-2">
+                  <a class = "navbar-brand" href = "#"><img src = "img/shortcuts_slogan.png" class = "slogan_image"></a>
+              </div>
+
+          </div>
+          
+        </div>
+        <div class = "collapse navbar-collapse" id = "myNavbar">
+          <ul class = "nav navbar-nav navbar-right">
+            <li><a href = "#" class = "text">Home</a></li>
+            <li><a href = "#map_layout_break" class = "text">Features</a></li>
+            <li><a href = "#About" class = "text">About</a></li>
+            <li><a href = "#" class = "text">Contact</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+
+
+    <div id = "mySlider" class = "carousel slide" data-ride = "carousel">
+      <ol class = "carousel-indicators">
+        <li data-target = "#mySlider" data-slide-to="0" class = "active"></li>
+        <li data-target = "#mySlider" data-slide-to="1"></li>
+        <li data-target = "#mySlider" data-slide-to="2"></li>
+      </ol>
+
+      <div class = "carousel-inner" role = "listbox">
+          <div class = "item active">
+          <img src = "img/snow.png">
+          <div class = "carousel-caption">
+              <br>
+              <h1 class = "main_slider_text" class = "text">Where you want. When you want.</h1>
+            <h1 class = "main_slider_text" class = "text">get to know shortcuts</h1>
+            <br>
+            <a href = "#map_layout_break"><button type = "button" class = "btn btn-default text">Get Started</button></a>
+          </div>
+          </div><!---End active--->
+
+          <div class = "item">
+            <img src = "img/mountains.png">
+            <div class = "carousel-caption">
+                <h1 class = "main_slider_text">Usability</h1>
+                <h1 class = "main_slider_text">&</h1>
+                <h1 class = "main_slider_text">Responsivness</h1>
+                <h1 class = "main_slider_text">At its finest.</h1>
+            </div>
+          </div>
+          <div class = "item">
+              <img src = "img/red.png">
+              <div class = "carousel-caption">
+                <h1 class = "main_slider_text">A Variety of Unique Features</h1>
+              </div>
+            </div>
+      </div>
+      <!---start slider controls-->
+      <a class = "left carousel-control" href = "#mySlider" role = "button" data-slide="prev">
+        <span class = "glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class = "sr-only">Previous</span>
+      </a>
+      <a class = "right carousel-control" href = "#mySlider" role = "button" data-slide="next">
+          <span class = "glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class = "sr-only">Next</span>
+        </a>
+    </div><!---End Slider--->
+
+    <div id = "map_layout_break"></div>
+    <br>
+    <br>
+    <br>
+
+    <!----General Layout of the Map-->
+    <div class = "container text-center" data-aos="fade-left" data-aos-delay="75" id = "map_layout">
+      
+      <h2 class = "text">Map Layout</h2>  
+      <br>
+      <br>
+            <img src = "img/Shortcuts_Screenshot_Default_wMenu.png"  id ="map_layout_image">
+    </div>
+    <br>
+    <br>
+    <br>
+  
+
+        <!--------Search Modes ------->
+        <div class = "container text-center" data-aos="fade-right" data-aos-delay="75" id = "SearchModes">
+            <h2 class = "text">Search Modes</h2>
+            <br>
+            <br>
+            <p class = "text">Using the dropdown menu adjacent to the search bar, you can select between 3 different type of Search Modes.</p>
+            <br>
+            <div class = "row">
+      
+              <div class = "col-sm-4">
+                  <h4 class = "text">Intersections</h4>
+                  <img src = "img/diglett_gif.gif" id ="icon">
+              </div>
+      
+              <div class = "col-sm-4">
+                  <h4 class = "text">Streets</h4>
+                  <img src = "img/html5.png" id ="icon">
+              </div>
+      
+              <div class = "col-sm-4">
+                  <h4 class = "text">Points of Interest</h4>
+                  <img src = "img/html5.png" id ="icon">
+              </div>
+      
+            </div>
+      
+            <br>
+            <br>
+            <br>
+          </div>
+
+    <!----Themes Section of the Map--> 
+    <div class = "container" data-aos="fade-left" data-aos-delay="75" id = "Themes">
+      <h1 class = "text-center text">Variety of Themes</h1>
+      <br>
+      <div class = "row">
+          <!---Themes Description Goes in here-->
+          <br>
+          <p class = "text-center text">We offer a range of different themes you can choose from to customize your map. 
+            Just open up the collapsible menu, click on settings, and you will find a drop down containing all the
+            themes we have made available for you.
+            The themes currently included are:
+          </p>
+          <br>
+      </div>
+      <div class ="row">
+        <div class = "col-md-5 theme_div">
+          <button type = "button" onclick="gotoSlide(0);" class = "btn btn-default theme_btn text">ShortCuts</button>
+          <br>
+          <button type = "button" onclick="gotoSlide(1);" class = "btn btn-default theme_btn text">Night Mode</button>
+          <br>
+          <button type = "button" onclick="gotoSlide(2);" class = "btn btn-default theme_btn text">Military</button>
+          <br>
+          <button type = "button" onclick="gotoSlide(3);" class = "btn btn-default theme_btn text">Blue and Gold</button>
+        </div>
+        <div class = "col-md-7">
+          <!--Carousel of Themes Goes in Here-->
+
+          <div id = "myThemes" class = "carousel slide theme_carousel" data-ride = "carousel2">
+              <ol class = "carousel-indicators">
+                <li data-target = "#myThemes" data-slide-to="0" class = "active"></li>
+                <li data-target = "#myThemes" data-slide-to="1"></li>
+                <li data-target = "#myThemes" data-slide-to="2"></li>
+                <li data-target = "#myThemes" data-slide-to="3"></li>
+              </ol>
+        
+              <div class = "carousel-inner" role = "listbox">
+                  <div class = "item active">
+                  <img id = "#theme_display" src = "img/Shortcuts_Screenshot_Default.png">
+                  </div><!---End active--->
+        
+                  <div class = "item">
+                    <img id = "#theme_display"  src = "img/Shortcuts_Screenshot_Night.png">
+                  </div>
+                  <div class = "item">
+                      <img id = "#theme_display"  src = "img/Shortcuts_Screenshot_Military.png">
+                    </div>
+                    <div class = "item">
+                        <img id = "#theme_display"  src = "img/Shortcuts_Screenshot_BG.png">
+                      </div>
+              </div>
+              <!---start slider controls-->
+              <a class = "left carousel-control" href = "#myThemes" role = "button" data-slide="prev">
+                <span class = "glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class = "sr-only">Previous</span>
+              </a>
+              <a class = "right carousel-control" href = "#myThemes" role = "button" data-slide="next">
+                  <span class = "glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class = "sr-only">Next</span>
+                </a>
+            </div><!---End Slider--->
+
+        </div>
+
+      </div>
+
+    <br>
+    <br>
+    <br>
+
+    </div>   
+
+    <!------- Get Directions ------->
+    <div class = "containter text-center" data-aos="fade-right" data-aos-delat="75" id = "getDirections">
+        <h1 class = "text">Get Directions</h1>
+        <br>
+        <br>
+        <p class = "text">Some Generic Text about getting directions.</p>
+
+        <!------Table structure:  carousel:  text view:   row of Buttons-->
+        <div class = "row">
+          <div class = "col-lg-3"></div>
+          <div class = "col-lg-6">
+          <div id = "myDirections" class = "carousel slide direction_carousel" data-ride = "carousel">
+              <ol class = "carousel-indicators">
+                <li data-target = "#myDirections" data-slide-to="0" class = "active"></li>
+                <li data-target = "#myDirections" data-slide-to="1"></li>
+                <li data-target = "#myDirections" data-slide-to="2"></li>
+              </ol>
+        
+              <div class = "carousel-inner" role = "listbox">
+                  <div class = "item active">
+                  <img src = "img/snow.png">
+                  </div><!---End active--->
+        
+                  <div class = "item">
+                    <img src = "img/mountains.png">
+                  </div>
+                  <div class = "item">
+                      <img src = "img/red.png">
+                  </div>
+              </div>
+              <!---start slider controls-->
+              <a class = "left carousel-control" href = "#myDirections" role = "button" data-slide="prev">
+                <span class = "glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class = "sr-only">Previous</span>
+              </a>
+              <a class = "right carousel-control" href = "#myDirections" role = "button" data-slide="next">
+                  <span class = "glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class = "sr-only">Next</span>
+                </a>
+              </div>
+          </div><!---End Slider--->
+        </div>
+
+        <div class = "row">
+            <h2 id = "getDirectionsText" class = "text">Explanation of the above screenshot</h2>
+        </div>
+        <div class = "row">
+          <button class = "distance_demo_btn btn" onclick="gotoDirections(0);">1</button>
+          <button class = "distance_demo_btn btn" onclick="gotoDirections(1);">2</button>
+          <button class = "distance_demo_btn btn" onclick="gotoDirections(2);">3</button>
+          <button class = "distance_demo_btn btn" onclick="gotoDirections(0);">4</button>
+          <button class = "distance_demo_btn btn" onclick="gotoDirections(1);">5</button>
+          <button class = "distance_demo_btn btn" onclick="gotoDirections(2);">6</button>
+          <button class = "distance_demo_btn btn" onclick="gotoDirections(0);">7</button>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!------- Measure Distance Mode ------->
+    <!--------Use a Gif Here to show how--->
+    <div class = "container text-center" data-aos="fade-left" data-aos-delay="75" id = "measureDistance">
+        <h2 class = "text">Measure Distance Mode</h2>
+        <br>
+        <br>
+        <p class = "text">Some Generic Text about using the distance mode.</p>
+        <img src = "img/Shortcuts_Measure_Distance.gif" id ="gif">
+
+
+    </div>
+
+    <!-----Who we are Section-->
+    <div class = "container text-center" data-aos="fade-right" data-aos-delay="75"id = "About">
+      <h2 class = "text">Who We Are</h2>
+      <br>
+      <br>
+      <div class = "row">
+
+        <div class="col-sm-4">
+          <img src = "img/html5.png" id ="icon">
+          <h4 class = "text">Naveed Ashfaq</h4>
+        </div>
+
+        <div class="col-sm-4">
+            <img src = "img/Final-1473.jpg" id ="icon">
+            <h4 class = "text">Siddharth Vijay</h4>
+        </div>
+
+          <div class="col-sm-4">
+              <img src = "img/bootstrap.png" id = "icon">
+              <h4 class = "text">David Lee</h4>
+        </div>  
+
+      </div>
+
+    <br>
+    <br>
+    <br>
+    </div>
+
+ 
+    <script src= "https: //cdnjs.cloudlfare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+      var wow = new WOW(
+        {
+          boxClass: 'wow',
+          animateClass: 'animated',
+          offset: '0',
+          mobile: 'true',
+          live:   'true',
+          callback: function(box){},
+          scrollContainer: null,
+          resetAnimation: true,
+        }
+      );
+     wow.init();
+    </script>
+
+    <script>
+    function gotoSlide(number){
+   $(".carousel").carousel(number);} 
+    </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
+
+
